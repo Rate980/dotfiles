@@ -1,0 +1,17 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+export EDITOR=vim
+PS1='[\u@\h \W]\$ '
+set -o vi
+complete -C /home/u2220208/go/bin/gocomplete go
+
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi

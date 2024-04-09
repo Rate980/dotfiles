@@ -1,0 +1,4 @@
+alias op=exo-open
+alias ll="ls -la"
+alias l="ls -l"
+alias la="ls -a"
